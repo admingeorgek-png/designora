@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Editor — Designora</title><link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+<header class="editor-top"><a class="brand" href="dashboard.html">✦ DESIGNORA</a><div class="docname">Untitled design</div><div class="top-actions"><button>↶</button><button>↷</button><button class="save">Save</button><button class="share">Share</button><button class="download" id="download">Download</button></div></header>
+<div class="editor">
+<aside class="sidebar">
+<button class="tool active" data-panel="design">▦<span>Design</span></button>
+<button class="tool" data-panel="text">T<span>Text</span></button>
+<button class="tool" data-panel="elements">◇<span>Elements</span></button>
+<button class="tool" data-panel="uploads">↑<span>Uploads</span></button>
+<button class="tool" data-panel="brand">◆<span>Brand</span></button>
+</aside>
+<section class="panel" id="panel">
+<h3>Design</h3><input class="search" placeholder="Search templates">
+<div class="template-row"><div class="template t1">CREATE<br>YOUR<br>STORY</div><div class="template t2">YOUR<br>IDEA<br>MATTERS</div></div>
+<h3>Quick colors</h3><div class="colors"><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+<main class="workspace"><div class="canvas-wrap"><div id="canvas" class="canvas"><div id="headline" class="canvas-text" contenteditable="true">YOUR<br>STORY<br>STARTS<br>HERE</div><div class="canvas-sub">Believe in the next step.</div></div></div><div class="bottom-bar"><span>Page 1 / 1</span><span>− &nbsp; 100% &nbsp; +</span></div></main>
+<aside class="properties"><h3>Properties</h3><label>Font size<input id="size" type="range" min="20" max="120" value="58"></label><label>Text color<input id="color" type="color" value="#ffffff"></label><label>Background<input id="bg" type="color" value="#155eef"></label><button id="addText" class="btn primary">+ Add text</button></aside>
+</div>
+<script src="js/editor.js"></script>
+</body></html>
